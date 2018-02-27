@@ -65,7 +65,7 @@ div.group{
 
 #geek{ background-image: url("../img/groups/geek.jpg"); }
 
-.circle-lg:hover{ transform: rotate(360deg) scale(1.2,1.2);}
+.circle-lg:hover{ transform: rotate(30deg) scale(1.2,1.2); }
 
 .members{ color: #fff; font-size: 1.2em; }
 

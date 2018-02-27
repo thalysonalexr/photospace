@@ -1,34 +1,32 @@
 # photospace
 📷 Free front-end photo editing website
 
-<h1>Photospace - Free online photo editor</h1>
+## Photospace - Free online photo editor
 
-<p>Final work carried out during the course of Programming in web environment 1 taught by Professor Cleyton Slaviero in the Information Systems course of the Federal University of Mato Grosso - Campus Universitario de Rondonópolis, Rondonópolis - MT Brazil.</p>
+Final work carried out during the course of Programming in web environment 1 taught by Professor Cleyton Slaviero in the Information Systems course of the Federal University of Mato Grosso - Campus Universitario de Rondonópolis, Rondonópolis - MT Brazil.
 
-<h2>Purpose</h2>
+### Purpose
 
-<p>Edit photos and make collages online for free.</p>
+Edit photos and make collages online for free.
 
-<h2Target Audience></h2>
+### Target Audience
 
-<p>Lovers of photography and photo editing such as designers, photographers and amateurs who need a fast quality editing.</p>
+Lovers of photography and photo editing such as designers, photographers and amateurs who need a fast quality editing.
 
-<h2>Functionalities</h2>
+### Functionalities
 
-<ul>
-<li>Subscribe users</li>
-<li>Edit photos</li>
-<li>Photo Collages</li>
-<li>User photo gallery</li>
-<li>Editing and photo sharing groups</li>
-</ul>
+* Subscribe users
+* Edit photos
+* Photo Collages
+* User photo gallery
+* Editing and photo sharing groups
 
-Screenshots
+## Screenshots
 
-<h2>desktop</h2>
+### desktop
 
 [AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/desktop/home.png)
 
-<h2>mobile</h2>
+### mobile
 
 [AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/mobile/home.png)
