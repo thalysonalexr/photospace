@@ -1,0 +1,211 @@
+/* Sessao menu */
+
+section#menu nav#n-home{ z-index: 1000; }
+
+/* Sessao band (imagem de capa)  */
+
+section#band{
+	background: url('../img/band/band3.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	min-height: 20%;
+	min-width: 100%;
+	transition: background-image 500ms ease-in-out;
+	height: 20%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
+/* Sessao foto de perfil */
+
+section#photo-perfil figure{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	top: 12%;
+	left: 50%;
+	margin-left: -50px;
+	border-radius: 100%;
+}
+
+section#photo-perfil img,
+section#photo-perfil figcaption{
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	border: 1px solid #dbdbdb;
+	position: absolute;
+	z-index: -1;
+}
+
+section#photo-perfil figure img{ object-fit: cover; }
+
+section#photo-perfil figcaption{
+	background-color: rgba(0,0,0,.5);
+	text-align: center;
+	opacity: 0;
+	transition: opacity 300ms;
+}
+
+section#photo-perfil .fa-camera{
+	color: #fff;
+	margin-top: 35px;
+}
+
+section#photo-perfil figure:hover figcaption{ opacity: 1; }
+
+/* Sessao menu de opcoes */
+
+section#menu-options{ margin-top: 25%; }
+
+section#menu-options .show-dropdown{
+	width: 50%;
+	padding: 5%;
+	border-radius: 7px;
+	cursor: pointer;
+	background-color: #f5f5f5;
+	border: 1px solid #e8e8e8;
+	margin-left: 2%;
+	margin-right: 2%;
+	color: #2e2e2e;
+}
+
+.right{
+	float: right;
+	width: 50%;
+	text-align: right;
+}
+
+.left{
+	float: left;
+	width: 50%;
+	text-align: left;
+}
+
+section#menu-options ul{
+	display: none;
+	width: 45%;
+	background-color: #f5f5f5;
+	border: 1px solid #e8e8e8;
+	border-radius: 7px;
+	position: absolute;
+	text-align: center;
+	z-index: 1000;
+}
+
+section#menu-options ul li svg{
+	float: left;
+	color: #2e2e2e;
+	margin-left: 3%;
+}
+
+section#menu-options .right ul{ right: 0; }
+
+section#menu-options .left ul{ left: 0; }
+
+section#menu-options ul li{
+	margin: 5% 0;
+	padding: 3%;
+}
+
+section#menu-options ul li:hover{ background-color: #e8e8e8; }
+
+section#menu-options ul li a{ color: #2e2e2e; }
+
+/* Sessao info do usuario */
+
+section#user-info{
+	padding: 15% 2% 2%;
+	color: #2e2e2e;
+}
+
+section#user-info h1{
+	text-align: center;
+	margin: 5% 0;
+	font-size: 1.2em;
+}
+
+section#user-info h2{
+	font-size: 1em;
+	margin: 3% 0;
+	display: inline-block;
+}
+
+section#user-info button{
+	cursor: pointer;
+	background-color: #228ae6;
+	display: inline-block;
+	border-radius: 7px;
+	padding: 2% 5%;
+	color: #fff;
+	font-size: 1em;
+	margin: 3%;
+}
+
+section#user-info button#save-bio{display: none;}
+
+section#user-info article{ padding: 2%; }
+
+section#user-info article p,
+section#user-info article textarea{
+	border: 1px solid #dbdbdb;
+	border-radius: 7px;
+	padding: 3%;
+	text-align: justify;
+	font-size: 1em;
+	font-style: italic;
+	width: 100%;
+	height: 100px;
+}
+
+section#user-info article textarea{
+	overflow: hidden;
+	color: #2e2e2e;
+	display: none;
+}
+
+/* Sessao galeria de fotos */
+
+section#galery{
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+section#galery .line-picture{
+	width: 100%;
+	text-align: center;
+}
+
+section#galery .frame{
+	width: 95px;
+	height: 95px;
+	padding: 1%;
+	display: inline-block;
+	transition: transform 200ms ease-in;
+}
+
+section#galery .frame:hover{
+	transform: scale(1.2,1.2);
+	box-shadow: 1px 2px 5px #2e2e2e;
+	background-color: #fff;
+}
+
+section#galery .frame img{
+	width: 100%;
+	height: 100%;
+	/*https://www.w3schools.com/css/css3_object-fit.asp*/
+	object-fit: cover;
+}
+
+section#galery .frame figcaption{
+	font-size: 0.8em;
+	position: absolute;
+	margin-top: -50px;
+	margin-left: 10px;
+	padding: 1%;
+	color: #fff;
+}
+
+section#galery .frame figcaption .fa-heart{ color: #ef3939; }

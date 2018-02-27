@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title>Registre-se agora em Photospace</title>
+
+		<!-- Metadados -->
+		<!-- Link: https://www.w3schools.com/tags/tag_meta.asp -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Registre-se gratuitamente em Photospace e desfrute das vantagens">
+		<meta name="keywords" content="Photospace,Editor,Fotos,Grupos,Registro,Cadastro">
+		<meta name="robots" content="index, follow">
+		<meta name="author" content="Thalyson Alexandre Rodrigues de Sousa">
+
+		<!-- Icones da pagina -->
+		<link rel="icon" type="image/png" href="assets/img/logo32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="assets/img/logo16.png" sizes="16x16" />
+
+		<!-- CSS -->
+		<link rel="stylesheet" type="text/css" href="assets/css/master-style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/form.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/register.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+		<!-- JS -->
+		<script defer src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+		<script defer src="scripts/data/Model/User.js"></script>
+		<script defer src="scripts/data/Controller/controller.js"></script>
+		<script defer src="scripts/data/Validation/validate.js"></script>
+		<script defer src="scripts/data/register.js"></script>
+	</head>
+
+	<body>
+
+		<main class="interface">
+
+			<section id="menu" class="menu fixed">
+		        <header>
+		            <a href="index.html" title="Ir para página inicial"><h1 class="logo-page">Photospace - Editor de fotos gratuito</h1></a>
+					<div class="alg-mid-vert"><a class="option" href="login.html">Faça login</a></div>
+		        </header>
+		    </section>
+
+			<section id="register">
+				<form id="form-register">
+					<fieldset id="user-register">
+						<legend>Registre-se agora!</legend>
+						<label class="font-ipt" for="fname">Nome</label><br>
+						<input class="font-ipt ipt" type="text" name="fname" id="fname" placeholder="João"><br>
+						<label class="font-ipt" for="lname">Sobrenome</label><br>
+						<input class="font-ipt ipt" type="text" name="lname" id="lname" placeholder="da Silva Pereira"><br>
+						<label class="font-ipt" for="email">E-mail</label><br>
+						<input class="font-ipt ipt" type="email" name="email" id="email" placeholder="exemplo@email.com"><br>
+						<label class="font-ipt" for="username">Nome de usuário</label><br>
+						<input class="font-ipt ipt" type="text" name="username" id="username" placeholder="joaosilva52"><br>
+						<fieldset id="sexo">
+							<legend>Sexo</legend>
+							<input type="radio" name="sex" id="male" value="masculino" checked>
+							<label for="male">Masculino</label><br>
+							<input type="radio" name="sex" id="female" value="feminino">
+							<label for="female">Feminino</label>
+						</fieldset>
+						<label class="font-ipt" for="password">Senha</label><br>
+						<input class="font-ipt ipt" type="password" name="password" id="password"><br>
+						<label class="font-ipt" for="confirm-password">Confirmar senha</label><br>
+						<input class="font-ipt ipt" type="password" name="confirm" id="confirm"><br>
+						<div class="center"><input type="button" name="register" id="register" class="send" value="Cadastrar"></div>
+					</fieldset>
+				</form>
+			</section>
+
+			<aside id="info">
+				<article id="benefits" class="text">
+					<hgroup>
+						<h1>É gratuito!</h1>
+						<h2>Porque se cadastrar?</h2>
+					</hgroup>
+					<p>
+						Ao cadastrar-se no <em>Photospace</em> você poderá editar fotos e salva-las em sua galeria. O melhor de tudo isso é que este serviço é <strong>gratuito</strong>! Salve quantas fotos quiser na sua conta em um espaço de até 15GB. Reveja fotos antigas, edite, favorite e compartilhe não só em redes sociais como <em>Instagram, Facebook, Twitter, LinkedIn, Pinterest</em> e outras, mas também em seus grupos! Sendo um usuário registrado você poderá criar e entrar em grupos de edição! Não perca tempo, inscreva-se agora mesmo!
+					</p>
+				</article>
+				<figure>
+					<img src="assets/img/group3.jpg" alt="">
+					<figcaption>Faça edições com seus amigos!</figcaption>
+				</figure>
+			</aside>
+
+			<footer class="myfooter">
+				<div>
+					<a href="#"><img src="assets/img/logo-page2.png" alt="Logo Cadtreesa"></a>
+					<p class="copyright">Copyright © Photospace 2018. Todos os direitos reservados.</p>
+				</div>
+			</footer>
+		</main>
+	</body>
+</html>

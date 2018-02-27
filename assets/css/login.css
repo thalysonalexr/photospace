@@ -1,0 +1,69 @@
+/* Link de recuperar senha */
+
+section#login a#forget-pass{
+    text-align: center;
+    padding: 3%;
+    color: #666;
+}
+
+section#login a:hover{
+    color: #000000;
+    text-decoration: underline;
+}
+
+/* Checkbox de lembrar senha */
+
+#lbl-remember{ font-size: 1.1em; }
+
+input#remember{
+    width: auto;
+    display: inline-block;
+}
+
+/* Links para logar com redes sociais */
+
+aside#login-with nav ul li a{
+    padding: 4%;
+    margin: 2% 0;
+    border-radius: 56px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    font-size: 1em;
+}
+
+aside#login-with nav ul li a:hover{
+    font-weight: 550;
+    background: transparent;
+}
+
+.color-pinterest{
+    background-color: #bd081c;
+    border: 1px solid #bd081c;
+}
+
+.color-twitter{
+    background-color: #1b95e0;
+    border: 1px solid #1b95e0;
+}
+
+.color-facebook{
+    background-color: #4267b2;
+    border: 1px solid #4267b2;
+}
+
+.color-instagram{
+    background-color: #003569;
+    border: 1px solid #003569;
+}
+
+.color-pinterest:hover{ color: #bd081c!important; }
+
+.color-twitter:hover{ color: #1b95e0!important; }
+
+.color-facebook:hover{ color: #4267b2!important; }
+
+.color-instagram:hover{ color: #003569!important; }
+
+.fa-facebook, .fa-pinterest, .fa-twitter, .fa-instagram{ float: left; }

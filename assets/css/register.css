@@ -1,0 +1,37 @@
+/* Artigo da lateral */
+
+article#benefits{ width: 100%; }
+
+article#benefits p{
+	text-align: justify;
+	color: #5f697d;
+}
+
+article#benefits hgroup{ margin: 0 0 4%; }
+
+article#benefits hgroup h1, article#benefits hgroup h2{
+	margin: 2% 0;
+	color: #404142;
+}
+
+article#benefits hgroup h1{ font-size: 2em; }
+
+article#benefits hgroup h2{ font-size: 1.5em; }
+
+article#benefits p{
+	line-height: 150%;
+}
+
+/* Imagem da lateral */
+
+aside#info figure{ padding: 2%; }
+
+aside#info figure img{
+    width: 100%;
+    border-radius: 7px;
+}
+
+aside#info figure figcaption{
+    font-style: italic;
+    padding: 3% 0;
+}

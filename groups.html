@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Photospace - Estúdio de edição</title>
+
+        <!-- Metadados -->
+        <!-- Link: https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Photospace - Estúdio para edição de fotos">
+        <meta name="author" content="Thalyson Alexandre Rodrigues de Sousa">
+
+        <!-- Icones da pagina -->
+        <link rel="icon" type="image/png" href="assets/img/logo32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/img/logo16.png" sizes="16x16" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/master-style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/groups.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+        <!-- JS -->
+        <script defer src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <script defer src="scripts/js/search.js"></script>
+        <script defer src="scripts/js/menu.js"></script>
+    </head>
+
+    <body>
+        <main id="interface">
+
+            <section id="menu">
+                <header>
+                    <a href="index.html"><h1 class="logo-page">Photospace - Editor de fotos gratuito</h1></a>
+
+                    <div class="field-search">
+                        <button class="icon-search"><i class="i-search fas fa-search fa-lg"></i></button>
+                        <input class="search" placeholder="Pesquise por grupos de edição, amigos...">
+                        <button class="cancel-field"><i class="i-cancel fas fa-times-circle fa-lg"></i></button>
+                    </div>
+
+                    <button class="circle menu-first"><i class="fas fa-bars fa-2x"></i></button>
+
+                    <nav id="n-home" class="menu-options">
+                        <button class="btn-search">Pesquisar grupos, amigos...<i class="i-search fas fa-search fa-lg"></i></button>
+                        <ul>
+                            <li><a href="index.html" title="Fazer logout">Sair</a></li>
+                        </ul>
+                    </nav>
+
+                </header>
+            </section>
+
+            <section id="mygroups">
+
+                <h1>Meus grupos</h1>
+
+                <div class="group">
+                    <button id="family" class="circle-lg blue">Familia</button>
+                    <span class="members"><i class="fas fa-users"></i> 07</span>
+                </div>
+
+                <div class="group">
+                    <button id="friends" class="circle-lg aqua">Amigos</button>
+                    <span class="members"><i class="fas fa-users"></i> 10</span>
+                </div>
+
+                <div class="group">
+                    <button id="little-bar" class="circle-lg tomato">Barzinho</button>
+                    <span class="members"><i class="fas fa-users"></i> 05</span>
+                </div>
+
+                <div class="group">
+                    <button id="training" class="circle-lg blue">Academia</button>
+                    <span class="members"><i class="fas fa-users"></i> 07</span>
+                </div>
+
+                <div class="group">
+                    <button id="university" class="circle-lg aqua">Universidade</button>
+                    <span class="members"><i class="fas fa-users"></i> 10</span>
+                </div>
+
+                <div class="group">
+                    <button id="geek" class="circle-lg tomato">Geek</button>
+                    <span class="members"><i class="fas fa-users"></i> 05</span>
+                </div>
+
+                <button id="new-group" title="Criar novo grupo"><i class="fas fa-plus-circle"></i></button>
+
+            </section>
+
+            <footer class="myfooter">
+                <div>
+                    <a href="#"><img src="assets/img/logo-page2.png" alt="Logo Cadtreesa"></a>
+                    <p>Copyright © Photospace 2018. Todos os direitos reservados.</p>
+                </div>
+            </footer>
+        </main>
+
+    </body>
+</html>

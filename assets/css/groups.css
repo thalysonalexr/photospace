@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+button{ cursor: pointer; }
+
+/* Sessao de menu */
+
+section#menu{ background-color: rgba(0,0,0,.9); }
+
+main{ background-color: #fcfcfc; }
+
+/* Sessao */
+
+section#mygroups{
+    text-align: center;
+    width: 100%;
+    background-image: linear-gradient(270deg, #00d592, #0092eb), url('../img/groups/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-blend-mode: multiply;
+	min-height: 100%;
+	min-width: 100%;
+}
+
+/* Titulo */
+
+section#mygroups h1{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5em;
+    padding: 5% 0;
+    color: #fff;
+    text-shadow: 1px 1px 7px #808080;
+}
+
+/* Botoes de grupos */
+
+div.group{
+    display: inline-block;
+    margin: 5% auto;
+}
+
+.circle-lg{
+    width: 128px;
+    height: 128px;
+    border-radius: 128px;
+    background-color: #fff;
+    font-size: 1.2em;
+    color: #fcfcfc;
+    text-shadow: 1px 1px 3px #808080;
+    transition: transform 200ms ease;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    background-position: center;
+}
+
+#family{ background-image: url("../img/groups/family.jpg"); }
+
+#friends{ background-image: url("../img/groups/friends.jpg"); }
+
+#little-bar{ background-image: url("../img/groups/beer.jpg"); }
+
+#training{ background-image: url("../img/groups/training.jpg"); }
+
+#university{ background-image: url("../img/groups/university.jpg"); }
+
+#geek{ background-image: url("../img/groups/geek.jpg"); }
+
+.circle-lg:hover{ transform: rotate(360deg) scale(1.2,1.2);}
+
+.members{ color: #fff; font-size: 1.2em; }
+
+.blue{ border: 10px solid #3974d3; }
+
+.aqua{ border: 10px solid #348e84; }
+
+.tomato{ border: 10px solid #e04141; }
+
+/* Novo grupo */
+
+#new-group{
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+    background: transparent;
+    color: #ed4a0a;
+    font-size: 2.5em;
+}

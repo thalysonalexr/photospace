@@ -1,0 +1,74 @@
+/* Sessao menu */
+
+section#menu{ background-color: rgba(0,0,0,.9); }
+
+section#menu nav#n-home{ z-index: 2; }
+
+/* Sessao de botoes */
+
+section#menu-left, section#menu-right{
+	position: absolute;
+	z-index: 1;
+}
+
+section#menu-left{ left: 0; }
+
+section#menu-right{ right: 0; }
+
+/* Grupo de botoes */
+
+button{ cursor: pointer; }
+
+.menu-list{
+	height: 100%;
+	width: 56px;
+	background-color: rgba(0,0,0,.9);
+}
+
+.group-btn button{
+	width: 56px;
+	height: 56px;
+	padding: 5%;
+	background: transparent;
+}
+
+.group-btn button svg{
+	color: #e8e8e8;
+	transition: transform 200ms ease;
+}
+
+/* Efeito hover nos botoes de edicao */
+
+section#menu-left .group-btn button:hover{
+	width: 175px;
+	background-color: black;
+	border-radius: 7px;
+}
+
+.group-btn button:hover svg{ transform: scale(1.5,1.5); }
+
+section#menu-left .group-btn button:hover svg{
+	margin-left: 10%;
+	float: left;
+}
+
+section#menu-left .group-btn button span{
+	font-size: 1.2em;
+	color: #fff;
+	display: none;
+}
+
+section#menu-left .group-btn button:hover span{ display: block; }
+
+/* Tela de edicao */
+
+canvas#space-editor{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+}
+
+/* Etiquetas do botao */
+
+span.btn-info{ position: absolute; }

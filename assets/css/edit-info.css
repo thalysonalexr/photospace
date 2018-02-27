@@ -1,0 +1,24 @@
+/* Sessao menu */
+
+section#menu{ background-color: rgba(0,0,0,.9); }
+
+fieldset#picture figure{
+	border: 1px solid #dbdbdb;
+	border-radius: 7px;
+	width: 100%;
+	height: 250px;
+	margin: 0 auto 5%;
+}
+
+fieldset#picture legend{
+	font-size: 1.1em;
+	color: #333;
+    font-family: 'Asap', sans-serif;
+}
+
+fieldset#picture figure img{
+	width: 100%;
+	height: 100%;
+	background-size: center center;
+	object-fit: cover;
+}

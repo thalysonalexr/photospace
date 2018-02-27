@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Photospace - Meu perfil</title>
+
+        <!-- Metadados -->
+        <!-- Link: https://www.w3schools.com/tags/tag_meta.asp -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Meu perfil com galeria de fotos em Photospace">
+        <meta name="author" content="Thalyson Alexandre Rodrigues de Sousa">
+
+        <!-- Icones da pagina -->
+        <link rel="icon" type="image/png" href="assets/img/logo32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="assets/img/logo16.png" sizes="16x16" />
+
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="assets/css/master-style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/profile.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+        <!-- JS -->
+        <script defer src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+      	<script defer src="scripts/js/search.js"></script>
+		<script defer src="scripts/js/menu.js"></script>
+		<script defer src="scripts/js/dropdownMenu.js"></script>
+        <script defer src="scripts/js/scrollPage.js"></script>
+        <script defer src="scripts/js/loadProfile.js"></script>
+    </head>
+
+    <body>
+
+    <main id="interface">
+
+    	<section id="menu">
+    		<header>
+                <a href="index.html"><h1 class="logo-page">Photospace - Editor de fotos gratuito</h1></a>
+
+                <div class="field-search">
+                    <button class="icon-search"><i class="i-search fas fa-search fa-lg"></i></button>
+                    <input class="search" placeholder="Pesquise por grupos de edição, amigos...">
+                    <button class="cancel-field"><i class="i-cancel fas fa-times-circle fa-lg"></i></button>
+                </div>
+
+                <button class="circle menu-first"><i class="fas fa-bars fa-2x"></i></button>
+
+                <nav id="n-home" class="menu-options">
+                    <button class="btn-search">Pesquisar grupos, amigos...<i class="i-search fas fa-search fa-lg"></i></button>
+                    <ul>
+                        <li><a href="index.html" title="Fazer logout">Sair</a></li>
+                    </ul>
+                </nav>
+
+            </header>
+    	</section>
+
+    	<section id="band">
+    	</section>
+
+    	<section id="photo-perfil">
+    		<figure>
+    			<img src="">
+    			<figcaption><i class="fas fa-camera fa-lg"></i></figcaption>
+    		</figure>
+    	</section>
+
+    	<section id="menu-options">
+    		<div class="left">
+	    		<button id="btn-left" class="show-dropdown"><i class="fas fa-sort-down"></i></button>
+				<ul class="dropdown">
+					<li><i class="fas fa-images"></i><a id="link-galery" href="#galery">Galeria</a></li>
+					<li><i class="fas fa-camera-retro"></i><a href="">Nova foto</a></li>
+					<li><i class="fas fa-pencil-alt"></i><a href="editor.html">Editar fotos</a></li>
+				</ul>
+			</div>
+
+			<div class="right">
+	    		<button id="btn-right" class="show-dropdown"><i class="fas fa-cogs"></i></button>
+				<ul class="dropdown">
+					<li><i class="fas fa-users"></i><a href="groups.html">Grupos</a></li>
+					<li><i class="fas fa-share-alt"></i><a href="">Compartilhar</a></li>
+					<li><i class="fas fa-user"></i><a href="edit-info.html">Editar perfil</a></li>
+				</ul>
+			</div>
+    	</section>
+
+        <section id="user-info">
+            <h1 id="name"></h1>
+            <article>
+                <h2>Sobre mim</h2>
+                <button id="edit-bio">Editar <i class="fas fa-edit"></i></button>
+                <button id="save-bio">Salvar <i class="fas fa-save"></i></button>
+                <p id="bio">Olá! Seja bem-vindo ao Photospace, desfrute de todo conteúdo oferecido, mas primeiro que tal editar sua <strong>biografia</strong>?</p>
+                <textarea id="field-bio" maxlength="120"></textarea>
+            </article>
+        </section>
+
+    	<section id="galery">
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic1.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 56 <i class="fas fa-pencil-alt"></i> 9</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic2.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 102 <i class="fas fa-pencil-alt"></i> 3</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic3.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 37 <i class="fas fa-pencil-alt"></i> 7</figcaption>
+    			</figure>
+    		</div>
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic4.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 45 <i class="fas fa-pencil-alt"></i> 2</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic5.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 88 <i class="fas fa-pencil-alt"></i> 5</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic6.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 90 <i class="fas fa-pencil-alt"></i> 8</figcaption>
+    			</figure>
+    		</div>
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic7.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 211 <i class="fas fa-pencil-alt"></i> 3</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic8.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 302 <i class="fas fa-pencil-alt"></i> 4</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic9.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 100 <i class="fas fa-pencil-alt"></i> 3</figcaption>
+    			</figure>
+    		</div>
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic10.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 75 <i class="fas fa-pencil-alt"></i> 10</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic11.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 36 <i class="fas fa-pencil-alt"></i> 1</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic12.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 56 <i class="fas fa-pencil-alt"></i> 12</figcaption>
+    			</figure>
+    		</div>
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic13.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 28 <i class="fas fa-pencil-alt"></i> 3</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic14.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 96 <i class="fas fa-pencil-alt"></i> 2</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic15.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 63 <i class="fas fa-pencil-alt"></i> 5</figcaption>
+    			</figure>
+    		</div>
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic16.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 12 <i class="fas fa-pencil-alt"></i> 0</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic17.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 66 <i class="fas fa-pencil-alt"></i> 1</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic18.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 215 <i class="fas fa-pencil-alt"></i> 3</figcaption>
+    			</figure>
+    		</div>
+
+    		<div class="line-picture">
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic19.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 225 <i class="fas fa-pencil-alt"></i> 2</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic20.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 86 <i class="fas fa-pencil-alt"></i> 7</figcaption>
+    			</figure>
+
+    			<figure class="frame">
+    				<img class="picture" alt="Foto galeria do usuário" src="assets/img/galery/pic21.jpg">
+    				<figcaption><i class="fas fa-heart"></i> 99 <i class="fas fa-pencil-alt"></i> 1</figcaption>
+    			</figure>
+    		</div>
+
+    	</section>
+
+    	<footer class="myfooter">
+            <div>
+                <a href="#"><img src="assets/img/logo-page2.png" alt="Logo Cadtreesa"></a>
+                <p>Copyright © Photospace 2018. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </main>
+
+    </body>
+</html>

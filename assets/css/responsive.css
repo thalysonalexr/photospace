@@ -1,0 +1,731 @@
+/**
+ * Arquivo responsável pela adaptacao do website em
+ * dispositivos com telas de diferentes tamanhos
+ *
+ * Utilizado @media (rule) queries
+ *
+ * Link: https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+ */
+
+
+/* Telas com o minimo de 360 pixels */
+
+@media screen and (min-width: 360px) {
+
+    /* Barra de pesquisa */
+
+    input.search{ width: 86%; }
+
+    /* Sessao galeria de fotos */
+
+    section#galery .frame{
+        width: 110px;
+        height: 110px;
+    }
+}
+
+/* Telas com o minimo de 440 pixels */
+
+@media screen and (min-width: 440px) {
+
+    /* Cabecalho */
+
+    header{ padding: 2%; }
+
+    /* Barra de pesquisa */
+
+    input.search{ width: 88%; }
+
+    button.cancel-field{ padding: 1% 3%; }
+
+    /* Sessoes */
+
+    .container figure, video{ width: 350px; }
+
+    .container video{ height: 250px; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 18%; }
+
+    /* Sessoes com formulario de login, cadastro e atualizar info */
+
+    section#login, section#register, section#update{ margin-top: 20%; }
+
+    /* Sessao galeria de fotos */
+
+    section#galery .frame{
+        width: 110px;
+        height: 110px;
+    }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options{ margin-top: 20%; }
+
+    section#galery .frame{
+        width: 130px;
+        height: 130px;
+    }
+
+}
+
+/* Telas com o minimo de 480 pixels */
+
+@media screen and (min-width: 480px) {
+
+    /* Logotipo */
+
+    .logo-page{
+    	width: 150px;
+        height: 56px;
+    	background: url('../img/logo.png') center center/150px no-repeat;
+    }
+
+    /* Botao circular de menu para dispositivos pequenos */
+
+    button.circle{
+    	width: 48px;
+    	height: 48px;
+    	border-radius: 48px;
+    }
+
+    button.menu-first .fa-bars{
+    	width: 24px;
+    	height: 24px;
+    }
+
+    /* Menu, botao de pesquisa e inicio */
+
+    nav.menu-options ul li, button.btn-search, a#start{ font-size: 1.1em; }
+
+    /* Barra de pesquisa */
+
+    div.field-search{
+        width: 60%;
+        margin: 2% 0;
+    }
+
+    input.search{
+        font-size: 1em;
+        width: 73%;
+    }
+
+    button.icon-search{ display: block; }
+
+    /* Texto central da sessao home */
+
+    div.center hgroup h1{ font-size: 2.7em; }
+
+    div.center hgroup h2{ font-size: 1.2em; }
+
+    /* Botao para conhecer o site */
+
+    div#knowsite .fa-arrow-circle-down:hover{ transform: scale(1.6,1.6); }
+
+    /* Sessoes */
+
+    .container figure, video{ width: 400px; }
+
+    .container video{ height: 280px; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 17%; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options{ margin-top: 15%; }
+
+    section#galery .frame{
+        width: 150px;
+        height: 150px;
+    }
+
+    section#photo-perfil figure{
+        width: 120px;
+        height: 120px;
+        margin-left: -60px;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 45px; }
+
+    .fa-sort-down, .fa-cogs{ font-size: 1.3em; }
+}
+
+/* Telas com o minimo de 540 pixels */
+
+@media screen and (min-width: 540px) {
+
+    /* Botao de inicio */
+
+    a#start{ width: 65%; }
+
+    /* Barra de pesquisa */
+
+    div.field-search{ width: 66%; }
+
+    input.search{ width: 75%; }
+
+    /* Sessoes */
+
+    .container figure, video{ width: 420px; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 16%; }
+
+    /* Sessoes de formularios */
+
+    section#login, section#register, section#update{ padding: 3% 5%; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options{ margin-top: 10%; }
+
+    section#galery .frame{
+        width: 170px;
+        height: 170px;
+    }
+
+    section#photo-perfil figure{
+        width: 130px;
+        height: 130px;
+        margin-left: -65px;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 50px; }
+}
+
+/* Telas com o minimo de 600 pixels */
+
+@media screen and (min-width: 600px) {
+
+    /* Botao de inicio */
+
+    a#start{
+        width: 60%;
+        padding: 4%;
+    }
+
+    /* Barra de pesquisa */
+
+    button.icon-search, button.cancel-field{ padding: 1% 2%; }
+
+    div.field-search{ width: 70%; }
+
+    input.search{ width: 82%; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 15%; }
+
+    /* Menu de navegacao */
+
+    nav.menu-options{
+        width: 75%;
+        right: 0;
+        left: auto;
+    }
+
+    nav.menu-options ul li{
+        padding: 3%;
+        margin-top: 3%;
+    }
+
+    /* Sessoes */
+
+    .container figure, video{ width: 475px; }
+
+    .container video{ height: 310px; }
+
+    /* Sessoes de formulario */
+
+    section#login, section#register, section#update{ padding: 0 7%; }
+
+    .font-ipt{ font-size: 1.1em; }
+
+    /* Lateral login - redes sociais */
+
+    aside#login-with{ padding: 3% 6%; }
+
+    aside#login-with nav ul li a{ font-size: 1.2em; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options{ margin-top: 10%; }
+
+    section#galery .frame{
+        width: 190px;
+        height: 190px;
+    }
+
+    section#photo-perfil figure{
+        width: 140px;
+        height: 140px;
+        margin-left: -70px;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 55px; }
+}
+
+/* Telas com o minimo de 660 pixels */
+
+@media screen and (min-width: 660px) {
+
+    /* Botao de inicio */
+
+    a#start{
+        width: 50%;
+        padding: 3.5%;
+    }
+
+    /* Menu de navegacao */
+
+    nav.menu-options{ width: 60%; }
+
+    /* Barra de pesquisa */
+
+    div.field-search{ width: 73%; }
+
+    input.search{ width: 83%; }
+
+    /* Sessoes */
+
+    .container figure, video{ width: 520px; }
+
+    .container video{ height: 325px; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 14%; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options{ margin-top: 10%; }
+
+    section#galery .frame{
+        width: 210px;
+        height: 210px;
+    }
+
+    section#galery .frame figcaption{ font-size: 0.9em; }
+
+    .fa-sort-down, .fa-cogs{ font-size: 1.5em; }
+}
+
+/* Telas com o minimo de 740 pixels */
+
+@media screen and (min-width: 740px) {
+
+    /* Cabecalho */
+
+    header{ padding: 1%; }
+
+    /* Botao circular do menu */
+
+    button.circle{ display: none; }
+
+    /* Menu de navegacao */
+
+    nav.menu-options{
+        display: block;
+        background-color: transparent;
+    }
+
+    nav.menu-options ul li{
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Barra de pesquisa */
+
+    div.field-search{
+        float: none;
+        width: 300px;
+        display: block!important;
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        top: 0;
+    }
+
+    input.search{ width: 80%; }
+
+    button.btn-search{ display: none; }
+
+    /* Menu de opcoes da sessao HOME */
+
+    nav#n-home{
+        width: 150px;
+        display: block!important;
+        position: static;
+    }
+
+    nav#n-home ul{ float: right; }
+
+    nav#n-home ul li{ width: 150px; }
+
+    nav#n-home ul li a{ font-size: 0.9em; }
+
+    nav#n-home ul li a.register{
+        background: linear-gradient(#ed4a0a, #e21c12);
+        border-radius: 7px;
+        padding: 2.5%;
+        text-decoration: none;
+    }
+
+    nav#n-home ul li a.register:hover{ box-shadow: 3px 3px 10px #666; }
+
+    /* Menu de navegacao */
+
+    nav#n-menu{
+        width: 74%;
+		margin-right: 1%;
+        line-height: 60px;
+        position: static;
+        display: block!important;
+		text-align: right;
+    }
+
+    nav#n-menu ul li{
+        display: inline-block;
+        width: 100px;
+		text-align: center;
+    }
+
+    nav#n-menu ul li a{ font-size: 0.8em; }
+
+    /* Botao de inicio */
+
+    a#start{ width: 45%; }
+
+    /* Sessoes */
+
+    .container figure, video{ width: 590px; }
+
+    .container video{ height: 350px; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 12%; }
+
+    /* Sessoes de formulario */
+
+    section#login, section#register, section#update{
+        margin-top: 15%;
+        padding: 0 12%;
+    }
+
+    /* Lateral de login */
+
+    aside#login-with{ padding: 2% 10%; }
+
+    /* Link de opcao no menu */
+
+    section#menu a.option{ font-size: 1.1em; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options{ margin-top: 10%; }
+
+    section#band{ min-height: 30%; }
+
+    section#photo-perfil figure{ top: 20%; }
+
+    section#menu-options button{ display: none; }
+
+    section#menu-options ul{
+        display: block!important;
+        background: transparent;
+        border: 0;
+        margin-top: 10%;
+        width: 35%;
+    }
+
+    section#menu-options ul li{
+        width: 120px;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+        padding: 3%;
+        background-color: #f5f5f5;
+        border: 1px solid #e8e8e8;
+        border-radius: 7px;
+        margin: 2% 0;
+    }
+
+    section#menu-options ul li a{ font-size: 0.8em; }
+
+    section#galery .frame{
+        width: 230px;
+        height: 230px;
+    }
+
+    section#galery .frame figcaption{ font-size: 0.9em; }
+
+    /* Sessao de atualizacao de perfil */
+
+    section#update{
+        width: 60%;
+        margin: 15% auto 0; 
+        padding: 0 5%;
+    }
+}
+
+/* Telas com o minimo de 768 pixels */
+
+@media screen and (min-width: 768px) {
+
+    /* Barra de pesquisa */
+
+    div.field-search{
+        width: 350px;
+        margin-left: -175px;
+    }
+
+    input.search{ width: 80%; }
+
+    /* Botao para ir ao editor */
+
+    a#start{ width: 40%; }
+
+    /* Sessoes que contenham imagens e video */
+
+    .container figure, video{ width: 620px; }
+
+    .container video{ height: 420px; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 11%; }
+
+    /* Formularios a esquerda e laterais a direita */
+
+    section#login, section#register, aside{
+        width: 50%;
+        padding: 0 2%!important;
+    }
+
+    section#login, section#register, aside#login-with{ float: left; }
+
+    aside{
+        float: right;
+        border-left: 1px solid #dbdbdb;
+    }
+
+    aside#info, aside#login-with{ margin-top: 15%; }
+
+    aside#login-with nav{ margin-top: 10%; }
+
+    /* Rodape */
+
+    footer.myfooter{ clear: both; }
+
+    /* Sessao galeria de fotos */
+
+    section#photo-perfil figure{
+        width: 150px;
+        height: 150px;
+        margin-left: -75px;
+    }
+
+    section#galery .frame{
+        width: 240px;
+        height: 240px;
+    }
+
+    section#galery .frame figcaption{
+        font-size: 1em;
+        padding: 1%;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 60px; }
+}
+
+/* Telas com o minimo de 890 pixels */
+
+@media screen and (min-width: 890px) {
+
+    /* Botao de inicio */
+
+    a#start{
+        width: 35%;
+        padding: 2.5%;
+    }
+
+    /* Texto central */
+
+    div.center hgroup h1{ font-size: 3em; }
+
+    div.center hgroup h2{ font-size: 1.3em; }
+
+    /* Barra de pesquisa */
+
+    div.field-search{
+        width: 400px;
+        margin-left: -200px;
+    }
+
+    input.search{ width: 81%; }
+
+    /* Rodape */
+
+    footer.myfooter div img{ width: 10%; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options ul{ width: 40%; }
+
+    section#photo-perfil figure{
+        width: 160px;
+        height: 160px;
+        margin-left: -80px;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 65px; }
+
+    section#galery .frame{
+        width: 280px;
+        height: 280px;
+    }
+
+}
+
+/* Telas com o minimo de 1024 pixels */
+
+@media screen and (min-width: 1024px) {
+
+    /* Botao de inicio */
+
+    a#start{ width: 30%; }
+
+    /* Texto central */
+
+    div.center hgroup h1{
+        font-size: 3.5em;
+        padding: 2%;
+    }
+
+    div.center hgroup h2{
+        font-size: 1.5em;
+        font-weight: lighter;
+        padding: 3%;
+    }
+
+    /* Barra de pesquisa */
+
+    div.field-search{
+        width: 450px;
+        margin-left: -225px;
+    }
+
+    input.search{ width: 83%; }
+
+    /* Menu de navegacao */
+
+	nav#n-menu ul li{ width: 150px; }
+
+	nav#n-menu ul li a{ font-size: 1em; }
+
+    /* Sessoes */
+
+    article.text{ width: 45%; }
+
+	.container article h2{ font-size: 1.7em; }
+
+	.container article p{ font-size: 1.1em; }
+
+    .container figure, video{
+        width: 450px;
+        margin-top: 3%;
+    }
+
+    .container video{ height: 350px; }
+
+    /* Sessoes com formulario e laterais */
+
+    section#login, section#register, aside{ padding: 0 5%!important; }
+
+    /* Sessao galeria de fotos */
+
+    section#band{ min-height: 35%; }
+
+    section#menu-options ul{ width: 45%; }
+
+    section#menu-options ul li{ width: 130px; }
+
+    section#photo-perfil figure{
+        width: 170px;
+        height: 170px;
+        margin-left: -85px;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 70px; }
+
+    section#galery .frame{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Telas com o minimo de 1280 pixels */
+
+@media screen and (min-width: 1280px) {
+
+    /* Botao de inicio */
+
+	a#start{
+        width: 380px;
+		padding: 2%;
+    }
+
+    /* Texto central */
+
+	div.center{ margin: 50px; }
+
+    /* Sessoes */
+
+	.container article h2{ font-size: 2em; }
+
+	.container article p{ font-size: 1.3em; }
+
+	.container figure, video{
+        width: 550px;
+        margin-top: 5%;
+    }
+
+    .container video{ height: 350px; }
+
+    /* Sessoes com formulario e laterais */
+
+    section#login, section#register, aside#login-with, aside#info{
+        padding: 0 7%!important;
+        margin-top: 10%;
+    }
+
+    aside#login-with nav{ margin-top: 5%; }
+
+    /* Rodape */
+
+	footer.myfooter div img{ width: 120px; }
+
+    /* Sessao galeria de fotos */
+
+    section#menu-options ul{ margin-top: 5%; }
+
+    section#menu-options ul li{ width: 145px; }
+
+    section#photo-perfil figure{
+        width: 200px;
+        height: 200px;
+        margin-left: -100px;
+    }
+
+    section#photo-perfil .fa-camera{ margin-top: 80px; }
+
+    section#galery .frame{
+        width: 350px;
+        height: 350px;
+    }
+}

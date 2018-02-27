@@ -1,0 +1,389 @@
+/* Imports */
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+	font-family: notosans;
+	src: url('../fonts/NotoSans-Regular.ttf');
+}
+
+/* RESET */
+
+@charset "UTF-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	font-weight: lighter;
+	font-family: 'Roboto', notosans, sans-serif;
+}
+
+html,body,main{
+	height: 100%;
+	width: 100%;
+}
+
+ul{ list-style: none; }
+
+a{
+	text-decoration: none;
+	display: inline-block;
+}
+
+strong{ font-weight: 400!important; }
+
+header{ 
+	padding: 3%;
+	width: 100%;
+	display: table;
+}
+
+.alg-mid-vert{
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/* Home */
+
+section#home{
+	background: url('../img/background1.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-blend-mode: multiply;
+	min-height: 100%;
+	min-width: 100%;
+	transition: background-image 500ms ease-in-out;
+	height: 100%;
+}
+
+/* Logotipo */
+
+.logo-page{
+	width: 42px;
+	height: 42px;
+	font-size: 0;
+	vertical-align: middle;
+	background: url('../img/logo-cam.png') center center/42px no-repeat;
+	float: left;
+}
+
+/* Barra de pesquisa */
+
+div.field-search{
+	border: 1px solid #dbdbdb;
+	width: 85%;
+	height: 42px;
+	border-radius: 5px;
+	background-color: #fff;
+	display: none;
+	float: right;
+}
+
+input.search{
+	width: 85%;
+	height: 100%;
+	padding: 1%;
+	font-size: 0.8em;
+	text-align: center;
+}
+
+button.cancel-field, button.icon-search{
+	height: 100%;
+	padding: 1% 3.5%;
+	cursor: pointer;
+}
+
+button.cancel-field{ float: right; }
+
+button.icon-search{
+	float: left;
+	display: none;
+}
+
+.i-search, .i-cancel{
+	color: #808080;
+	vertical-align: middle;
+}
+
+button.cancel-field, button.icon-search{ background-color: transparent; }
+
+/* Botao circular */
+
+button.circle{
+	width: 42px;
+	height: 42px;
+	border-radius: 42px;
+	cursor: pointer;
+	float: right;
+}
+
+/* Botao do primeiro menu */
+
+button.menu-first{ background: linear-gradient(#ed4a0a, #e21c12); }
+
+button.menu-first .fa-bars{
+	color: #fff;
+	width: 24px;
+	height: 24px;
+}
+
+/* Menu de opcoes */
+
+nav.menu-options{
+	float: right;
+	text-align: center;
+	background-color: rgba(0,0,0,.9);
+	border-radius: 7px;
+	width: 100%;
+	display: none;
+	position: absolute;
+	left: 0;
+	box-sizing: border-box;
+}
+
+nav.menu-options ul li{
+	padding: 2%;
+	margin-top: 2%;
+}
+
+nav.menu-options a, nav.menu-options button{
+	color: #fff;
+	padding: 3%;
+	width: 100%;
+	background-color: transparent;
+}
+
+nav.menu-options a:hover{ text-decoration: underline; }
+
+/* Botao para abrir barra de pesquisa */
+
+button.btn-search{
+	cursor: pointer;
+	border-radius: 7px;
+	background: linear-gradient(#ed4a0a, #e21c12);
+	font-size: 1em;
+}
+
+button.btn-search .fa-search{
+	color: #fff;
+	margin-left: 5%;
+	float: right;
+}
+
+/* Menu social network fixed left */
+
+.social-network{
+	float: left;
+	position: fixed;
+	top: 50%;
+	left: 0;
+	margin-top: -122.17px;
+	margin-left: 1%;
+}
+
+.social-network ul li{ padding: 10%; }
+
+.white{ color: #fff; }
+
+.gray{ color: #666; }
+
+.social-network svg{ transition: transform 300ms ease; }
+
+.social-network svg:hover{ transform: scale(1.5,1.5); }
+
+/* Texto central */
+
+div.center{
+	text-align: center;
+	margin: 10% 0;
+}
+
+div.center hgroup{
+	margin: 2% 10% 0;
+	color: #fff;
+}
+
+div.center hgroup h1{
+	font-family: 'Slabo 27px', notosans, serif;
+	font-size: 2.5em;
+	font-weight: 600;
+	text-shadow: 1px 1px 1px #dbdbdb;
+	padding: 3%;
+}
+
+div.center hgroup h2{
+	font-size: 1.1em;
+	font-weight: 250;
+	padding: 5%;
+}
+
+/* Botao de start */
+
+a#start{
+	width: 70%;
+	padding: 5%;
+	border-radius: 56px;
+	color: #fff;
+	font-size: 1em;
+	cursor: pointer;
+	margin: 5% 0;
+	background-color: #ED330A;
+	border: 1.5px solid #ED330A;
+	transition: 500ms ease;
+}
+
+a#start:hover{
+	background: transparent;
+	color: #ED330A;
+	font-weight: 500;
+}
+
+/* Botao para conhecer o website */
+
+div#knowsite{
+	width: 56px;
+	text-align: center;
+	position: absolute;
+	bottom: 5%;
+    left:50%;
+    margin-top:-23px;
+    margin-left:-23px;
+}
+
+div#knowsite .fa-arrow-circle-down{
+	color: #f96a22;
+	transition: transform 300ms ease;
+}
+
+div#knowsite .fa-arrow-circle-down:hover{
+	transform: scale(1.5,1.5);
+	color: #f24718;
+}
+
+/* Sessao menu principal */
+
+section.menu{
+	background-color: #000;
+	width: 100%;
+	z-index: 10000;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+}
+
+.absolute{ position: absolute; }
+
+/* Menu (Navegacao entre topicos)*/
+
+button.menu-second{ background-color: transparent; }
+
+button.menu-second .fa-bars{
+	color: #fff;
+	transition: transform 300ms ease;
+}
+
+button.menu-second .fa-bars:hover{ transform: scale(1.2,1.2); }
+
+.navigator{
+	width: 75%;
+	text-align: right;
+	float: right;
+}
+
+.navigator ul li{
+	display: inline-block;
+	padding-left: 4%;
+	white-space: normal;
+}
+
+.navigator ul li a{ color: #999; }
+
+.navigator ul li a:hover{ color: #fff; }
+
+/* Sessoes para conhecer o website */
+
+.container{
+	border-bottom: 1px solid #dbdbdb;
+	padding: 1%;
+	text-align: center;
+}
+
+section#about{ margin-top: 66px; }
+
+.container article{
+	padding: 2%;
+	text-align: center;
+}
+
+.container article h2{
+	color: #666;
+	padding: 4% 1%;
+	font-size: 1.5em;
+	font-weight: 300;
+	text-align: left;
+	margin: 5% 0;
+}
+
+.container article p{
+	color: #5f697d;
+	text-align: justify;
+	padding: 1%;
+	line-height: 1.6em;
+}
+
+article.text{
+	width: 80%;
+	padding: 1%;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.container figure, video{
+	padding: 3%;
+	width: 300px;
+	display: inline-block;
+}
+
+.container video{ height: 200px; }
+
+.container figure img{
+	width: 100%;
+	border-radius: 7px;
+}
+
+.container figure figcaption{
+	font-style: italic;
+	padding: 2%;
+	text-align: left;
+	margin-top: 2%;
+	color: #333;
+}
+
+/* Rodapé da página */
+
+footer.myfooter{
+	width: 100%;
+	text-align: center;
+	padding: 3%;
+	color: #fff;
+	background-color: rgba(0,0,0,.9);
+}
+
+footer.myfooter a{ display: block; }
+
+footer.myfooter div img{
+	width: 20%;
+	padding: 2%;
+}
+
+footer.myfooter div p{ padding: 3%; }
+
+
+/**/
