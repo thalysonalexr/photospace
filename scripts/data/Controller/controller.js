@@ -125,8 +125,8 @@ updateInfo = function() {
     let username = $( 'input#username' ).val();
     let sex = $('input[name="sex"]:checked').val();
     let password = $( 'input#password' ).val();
-    let picture = 'assets/img/perfil/' + $( 'input#ipt-load' ).val().split( '\\' )[2];
-
+    let filePic = $( 'input#ipt-load' ).val().split( '\\' )[2];
+    let picture = 'assets/img/perfil/' + filePic;
     var allUsers = JSON.parse( localStorage.getItem( INDEX ) );
     var current = JSON.parse( sessionStorage.getItem( LOGGED ) );
 
@@ -142,7 +142,9 @@ updateInfo = function() {
             allUsers[user].username = username;
             allUsers[user].sex = sex;
             allUsers[user].password = password;
-            allUsers[user].picture = picture;
+
+            if (filePic)
+                allUsers[user].picture = picture;
 
             // Atualiza as informacoes do usuario atual
             current = allUsers[user];
@@ -154,4 +156,25 @@ updateInfo = function() {
             return;
         }
     }
+}
+
+/**
+ * Remove um usuario de localStorage e sessionStorage
+ */
+deleteUser = function() {
+    var currentUser = JSON.parse( sessionStorage.getItem( LOGGED ) );
+    var allUsers = JSON.parse( localStorage.getItem( INDEX ) );
+
+    // Procura o usurio atual a ser excluido
+    for (var i = 0; i < allUsers.length; i++) {
+        if (currentUser.email == allUsers[i].email) {
+            allUsers.splice( i , 1 ) // Remove o usuario
+            break;
+        }
+    }
+
+    sessionStorage.removeItem( LOGGED );
+    localStorage.setItem( INDEX , JSON.stringify( allUsers ) );
+
+    $( location ).attr( 'href' , 'index.html' );
 }

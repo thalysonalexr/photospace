@@ -22,3 +22,60 @@ fieldset#picture figure img{
 	background-size: center center;
 	object-fit: cover;
 }
+
+/* Botao excluir conta */
+
+button#delete-user{
+	width: 56px;
+	height: 56px;
+	border-radius: 56px;
+	padding: 2%;
+	background-color: #d11414;
+	font-size: 1em;
+	position: fixed;
+	right: 3%;
+	bottom: 5%;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 1px 2px solid #808080;
+}
+
+.modal-confirm{
+	width: 250px;
+	height: 140px;
+	background-color: #fff;
+	border: 1px solid #dbdbdb;
+	border-radius: 7px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -125px;
+	margin-top: -70px;
+	padding: 5%;
+	display: none;
+}
+
+.modal-confirm p{
+	color: #808080;
+}
+
+.modal-confirm button{
+	width: 40%;
+	cursor: pointer;
+	padding: 3% 5%;
+	color: #fff;
+	font-size: 1em;
+	border-radius: 7px;
+	position: absolute;
+	bottom: 10%;
+}
+
+button#confirm{
+	background-color: #318e36;
+	left: 5%;
+}
+
+button#cancel{
+	background-color: #d11414;
+	right: 5%;
+}

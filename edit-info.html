@@ -27,6 +27,7 @@
 		<script defer src="scripts/data/Controller/controller.js"></script>
 		<script defer src="scripts/data/Validation/validate.js"></script>
 		<script defer src="scripts/data/edit.js"></script>
+		<script defer src="scripts/data/delete.js"></script>
 		<script defer src="scripts/js/search.js"></script>
         <script defer src="scripts/js/menu.js"></script>
 		<script defer src="scripts/js/loadPicture.js"></script>
@@ -95,7 +96,15 @@
 					</fieldset>
 				</form>
 
-	    	</section>
+				<button id="delete-user" title="Excluir conta"><i class="fas fa-trash-alt"></i></button>
+
+				<div class="modal-confirm">
+					<p>Confirmar <strong>exclusão</strong> de conta?</p>
+					<button id="confirm">Sim <i class="fas fa-check"></i></button>
+					<button id="cancel">Não <i class="fas fa-times"></i></button>
+				</div>
+
+			</section>
 
 	    	<footer class="myfooter">
 	            <div>

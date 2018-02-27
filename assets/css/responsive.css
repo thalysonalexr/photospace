@@ -151,6 +151,16 @@
     section#photo-perfil .fa-camera{ margin-top: 45px; }
 
     .fa-sort-down, .fa-cogs{ font-size: 1.3em; }
+
+    /* Janela modal de confirmacao de exclusao */
+
+    .modal-confirm{
+        width: 300px;
+        height: 180px;
+        margin-left: -150px;
+        margin-top: -90px;
+        padding: 3%;
+    }
 }
 
 /* Telas com o minimo de 540 pixels */
@@ -468,7 +478,7 @@
 
     section#update{
         width: 60%;
-        margin: 15% auto 0; 
+        margin: 15% auto 0;
         padding: 0 5%;
     }
 }
