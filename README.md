@@ -25,8 +25,8 @@ Lovers of photography and photo editing such as designers, photographers and ama
 
 ### mobile
 
-[AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/home-mobile.png)
+![AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/mobile/home.png)
 
 ### desktop
 
-[AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/home-desktop.png)
+![AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/desktop/home.png)
