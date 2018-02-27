@@ -23,10 +23,10 @@ Lovers of photography and photo editing such as designers, photographers and ama
 
 ## Screenshots
 
-### desktop
-
-[AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/desktop/home.png)
-
 ### mobile
 
-[AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/mobile/home.png)
+[AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/home-mobile.png)
+
+### desktop
+
+[AltText](https://github.com/thalysonrodrigues/photospace/raw/master/pages/home-desktop.png)
