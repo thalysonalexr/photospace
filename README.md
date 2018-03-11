@@ -21,7 +21,7 @@ Lovers of photography and photo editing such as designers, photographers and ama
 * User photo gallery
 * Editing and photo sharing groups
 
-##View website ->: [PHOTOSPACE](https://thalysonrodrigues.github.io/photospace/)
+## View website: [PHOTOSPACE](https://thalysonrodrigues.github.io/photospace/)
 
 ## Screenshots
 
